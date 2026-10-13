@@ -116,5 +116,5 @@ nav { flex-wrap: wrap; }
 }
 
 /* Script lettering for project subtitles only. */
-.study-heading h3 + p { font-family: 'Pinyon Script', cursive; font-size: 30px; line-height: 1.45; }
-@media (max-width: 650px) { .study-heading h3 + p { font-size: 27px; } }
+.study-heading h3 + p { font-family: 'Courgette', cursive; font-size: 25px; line-height: 1.5; }
+@media (max-width: 650px) { .study-heading h3 + p { font-size: 23px; } }
