@@ -114,3 +114,7 @@ nav { flex-wrap: wrap; }
   .nav { padding-block: 16px; }
   nav { gap: 10px 20px; }
 }
+
+/* Script lettering for project subtitles only. */
+.study-heading h3 + p { font-family: 'Pinyon Script', cursive; font-size: 30px; line-height: 1.45; }
+@media (max-width: 650px) { .study-heading h3 + p { font-size: 27px; } }
