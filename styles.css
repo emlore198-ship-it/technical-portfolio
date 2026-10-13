@@ -138,3 +138,6 @@ nav a:hover, footer a:hover { color: #7c3aed; }
 .contribution-card h3 { font-size: 23px; line-height: 1.4; letter-spacing: 0; margin: 0 0 12px; }
 .contribution-card p { font-size: 16px; margin: 0; }
 @media (max-width: 650px) { .contribution-card { padding: 20px; } }
+
+.document-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px; }
+.download-link { color: #7c3aed; font-size: 15px; }
