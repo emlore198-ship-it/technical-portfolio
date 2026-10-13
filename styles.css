@@ -1,10 +1,10 @@
 @charset "UTF-8";
 :root {
   color-scheme: light;
-  --paper: #faf9f6;
-  --ink: #252525;
-  --secondary: #5b5b57;
-  --rule: #d9d8d2;
+  --paper: #f5ecd9;
+  --ink: #493325;
+  --secondary: #75604c;
+  --rule: #d8c8ad;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 30px; }
@@ -17,7 +17,7 @@ body {
 }
 a { color: inherit; text-underline-offset: 4px; }
 a:hover { text-decoration: underline; }
-a:focus-visible { outline: 2px solid #454545; outline-offset: 5px; }
+a:focus-visible { outline: 2px solid #795638; outline-offset: 5px; }
 .wrap { width: min(1040px, calc(100% - 80px)); margin-inline: auto; }
 .nav {
   display: flex;
