@@ -1,10 +1,10 @@
 @charset "UTF-8";
 :root {
   color-scheme: dark;
-  --paper: #0b0c10;
-  --ink: #9ba1b0;
-  --secondary: #9ba1b0;
-  --rule: #2d2b42;
+  --paper: #110e1b;
+  --ink: #b3acc4;
+  --secondary: #b3acc4;
+  --rule: #2c2442;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 30px; }
@@ -17,7 +17,7 @@ body {
 }
 a { color: inherit; text-underline-offset: 4px; }
 a:hover { text-decoration: underline; }
-a:focus-visible { outline: 2px solid #8b5cf6; outline-offset: 5px; }
+a:focus-visible { outline: 2px solid #a78bfa; outline-offset: 5px; }
 .wrap { width: min(1040px, calc(100% - 80px)); margin-inline: auto; }
 .nav {
   display: flex;
@@ -123,10 +123,10 @@ nav { flex-wrap: wrap; }
 h1, h2, h3 { letter-spacing: 0; }
 .study-copy h4 { font-weight: 700; line-height: 1.5; }
 
-/* Palette test 01: obsidian and electric violet. */
-h1, h2, h3, h4, .wordmark { color: #ffffff; }
-.profile-grid, .next-body { background: #161922; border: 1px solid #2d2b42; padding: 28px; }
-.study-index { background: #161922; padding: 22px; border: 1px solid #2d2b42; }
-.study-link, .email, .study-heading .category, .project-status { color: #8b5cf6; }
-nav a:hover, footer a:hover { color: #8b5cf6; }
+/* Palette test 02: dark plum and lavender. */
+h1, h2, h3, h4, .wordmark { color: #f1eef8; }
+.profile-grid, .next-body { background: #1b162b; border: 1px solid #2c2442; padding: 28px; }
+.study-index { background: #1b162b; padding: 22px; border: 1px solid #2c2442; }
+.study-link, .email, .study-heading .category, .project-status { color: #a78bfa; }
+nav a:hover, footer a:hover { color: #a78bfa; }
 @media (max-width: 650px) { .profile-grid, .next-body, .study-index { padding: 20px; } }
