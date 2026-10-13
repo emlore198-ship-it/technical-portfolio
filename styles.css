@@ -130,3 +130,11 @@ h1, h2, h3, h4, .wordmark { color: #e2e8f0; }
 .study-link, .email, .study-heading .category, .project-status { color: #7c3aed; }
 nav a:hover, footer a:hover { color: #7c3aed; }
 @media (max-width: 650px) { .profile-grid, .next-body, .study-index { padding: 20px; } }
+
+/* Full-width cards aligned with their parent content sections. */
+.profile-grid { grid-template-columns: 1fr; width: 100%; }
+.next-body { width: 100%; max-width: none; }
+.contribution-card { width: 100%; background: #12121a; border: 1px solid #1f1d2e; padding: 28px; margin: 0 0 24px; }
+.contribution-card h3 { font-size: 23px; line-height: 1.4; letter-spacing: 0; margin: 0 0 12px; }
+.contribution-card p { font-size: 16px; margin: 0; }
+@media (max-width: 650px) { .contribution-card { padding: 20px; } }
