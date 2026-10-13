@@ -2,8 +2,8 @@
 :root {
   color-scheme: light;
   --paper: #d9c3b4;
-  --ink: #3e251e;
-  --secondary: #684c40;
+  --ink: #70472f;
+  --secondary: #73513b;
   --rule: #b99b87;
 }
 * { box-sizing: border-box; }
