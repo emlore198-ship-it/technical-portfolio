@@ -80,3 +80,37 @@ footer a { text-decoration: none; }
   footer > span:nth-child(2) { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Section hierarchy and project navigation. Existing font families are retained. */
+nav { flex-wrap: wrap; }
+.intro { padding-bottom: 40px; }
+.intro .academic { max-width: 760px; margin-bottom: 0; }
+.profile, .next-project, .contact { border-top: 1px solid var(--rule); padding-block: 34px 44px; }
+.profile > h2, .next-project > h2, .contact > h2 { font-size: 30px; line-height: 1.3; margin: 0 0 24px; }
+.profile > .statement { max-width: 800px; margin-bottom: 30px; }
+.profile-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; }
+.profile-block h3 { font-size: 23px; letter-spacing: 0; margin: 0 0 12px; }
+.profile-block p { margin: 0; font-size: 16px; }
+.section-intro { max-width: 760px; color: var(--secondary); margin: 14px 0 24px; }
+.study-index { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-bottom: 26px; border-bottom: 1px solid var(--rule); }
+.study-index a { display: flex; flex-direction: column; gap: 4px; font-size: 15px; }
+.study-index span { color: var(--secondary); font-size: 14px; }
+.study-heading .category { font-size: 14px; margin-bottom: 10px; font-weight: 600; }
+.study-copy h4 { font-size: 16px; margin: 22px 0 8px; font-weight: 600; }
+.study-copy h4:first-child { margin-top: 0; }
+.concepts { margin-bottom: 20px; }
+.next-body { max-width: 800px; }
+.project-status { font-size: 14px; color: var(--secondary); margin: 0 0 12px; }
+.next-body h3 { font-size: 29px; letter-spacing: 0; margin-bottom: 16px; }
+.next-body > p:last-child { margin: 0; }
+.contact h2 { margin-bottom: 8px; }
+@media (max-width: 650px) {
+  .profile-grid, .study-index { grid-template-columns: 1fr; gap: 24px; }
+  .profile, .next-project, .contact { padding-block: 28px 34px; }
+  .profile > h2, .next-project > h2, .contact > h2 { font-size: 27px; }
+  .study-index { gap: 16px; }
+  .study-index a { flex-direction: row; flex-wrap: wrap; gap: 4px 12px; }
+  .next-body h3 { font-size: 25px; }
+  .nav { padding-block: 16px; }
+  nav { gap: 10px 20px; }
+}

@@ -5,45 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#d9c3b4">
   <meta name="description" content="Mazher Ghabour's technical portfolio: visual programming, computational mathematics, agent-based simulation, and procedural kinematics in Blender Geometry Nodes.">
-  <title>Mazher Ghabour — Technical Portfolio</title>
+  <title>Mazher Ghabour | Technical Portfolio</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="nav wrap">
     <a class="wordmark" href="#top" aria-label="Mazher Ghabour, top of page">Mazher Ghabour</a>
-    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#studies">Selected studies</a><a href="mailto:mazhsch102008@gmail.com">Contact <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#studies">Case studies</a><a href="#next-project">Next project</a><a href="#contact">Contact</a></nav>
   </header>
   <main id="main">
     <section class="intro wrap" id="top" aria-labelledby="intro-title">
-      <div id="about">
-        <p class="eyebrow">About / Academic direction</p>
-        <h1 id="intro-title">Mazher Ghabour</h1>
-        <p class="academic">I’m a recent high school graduate applying to undergraduate programs in robotics and artificial intelligence.</p>
-        <p class="statement">I use Geometry Nodes, the visual programming language in Blender, to translate mathematical ideas into computational systems.</p>
-        <a class="email" href="mailto:mazhsch102008@gmail.com">mazhsch102008@gmail.com</a>
+      <p class="eyebrow">Technical portfolio</p>
+      <h1 id="intro-title">Mazher Ghabour</h1>
+      <p class="academic">I’m a recent high school graduate applying to undergraduate programs in robotics and artificial intelligence.</p>
+    </section>
+    <section class="profile wrap" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p class="statement">I use Geometry Nodes, the visual programming language in Blender, to translate mathematical ideas into computational systems.</p>
+      <div class="profile-grid">
+        <div class="profile-block"><h3>Why robotics and AI</h3><p>I’m interested in technology and mechanics, especially how software can drive physical systems. I want to study robotics and AI to learn how computation connects with hardware and makes mechanical systems move and respond.</p></div>
+        <div class="profile-block"><h3>My contribution</h3><p>I completed all three projects independently, taking responsibility for the Geometry Nodes systems, scene creation, materials, lighting, rendering, and technical documentation.</p></div>
       </div>
     </section>
     <section class="studies wrap" id="studies" aria-labelledby="studies-title">
-      <div class="section-heading"><h2 id="studies-title">Selected studies</h2></div>
+      <div class="section-heading"><h2 id="studies-title">Technical case studies</h2></div>
+      <p class="section-intro">Three independent projects, organized by their main technical focus. Each includes a cinematic render, an overview, and a link to the full study.</p>
+      <nav class="study-index" aria-label="Browse studies by topic">
+        <a href="#fabrik"><strong>Kinematics</strong><span>FABRIK</span></a>
+        <a href="#physarum"><strong>Agent-based simulation</strong><span>Physarum</span></a>
+        <a href="#fractals"><strong>Computational mathematics</strong><span>Fractals</span></a>
+      </nav>
       <article class="study" id="fabrik" aria-labelledby="fabrik-title">
-        <div class="study-heading"><h3 id="fabrik-title">FABRIK</h3><p>A procedural kinematic locomotion solver</p></div>
-        <figure><a class="render-link" href="fabrik.webp" target="_blank" rel="noopener" aria-label="Open FABRIK cinematic render in a new tab"><img src="fabrik.webp" width="2400" height="1350" alt="Cinematic render of a multi-legged robot with a central eye, articulated limbs, and magenta accents leaning over an open book." fetchpriority="high"></a><figcaption><span>FABRIK Robot (Monochrome)</span><span>Rendered in Blender</span></figcaption></figure>
-        <div class="study-details"><div class="concepts" aria-label="Technical concepts"><span>Inverse kinematics</span><span>Iterative constraints</span><span>Gait scheduling</span></div><div class="study-copy"><p>A procedural locomotion system that coordinates articulated legs through persistent foot state, phase-based gait scheduling, and terrain queries. I implemented the FABRIK algorithm as sequential backward and forward sweeps to enforce segment-length constraints, then converted the solved chains into oriented geometry. The study documents the system architecture, adjustable topology, and the limits of its kinematic model.</p><a class="study-link" href="https://drive.google.com/file/d/1SbmDOa_kQGCmyjptoIX-84pvjEjHxdUA/view?usp=sharing" target="_blank" rel="noopener">Read the full technical study <span class="pdf">PDF · 8 pages</span><span aria-hidden="true">↗</span><span class="sr-only"> (Google Drive, opens in a new tab)</span></a></div></div>
+        <div class="study-heading"><p class="category">Kinematics</p><h3 id="fabrik-title">FABRIK</h3><p>A procedural kinematic locomotion solver</p></div>
+        <figure><a class="render-link" href="fabrik.webp" target="_blank" rel="noopener" aria-label="Open FABRIK cinematic render in a new tab"><img src="fabrik.webp" width="2400" height="1350" alt="Cinematic render of a multi-legged robot with a central eye, articulated limbs, and magenta accents leaning over an open book." fetchpriority="high"></a><figcaption><span>FABRIK Cinematic Render</span><span>Rendered in Blender</span></figcaption></figure>
+        <div class="study-details"><div class="study-copy"><h4>Project overview</h4><p>A procedural locomotion system that coordinates articulated legs through persistent foot state, phase-based gait scheduling, and terrain queries. I implemented the FABRIK algorithm as sequential backward and forward sweeps to enforce segment-length constraints, then converted the solved chains into oriented geometry. The study documents the system architecture, adjustable topology, and the limits of its kinematic model.</p><h4>Technical focus</h4><div class="concepts"><span>Inverse kinematics</span><span>Iterative constraints</span><span>Gait scheduling</span></div><h4>Full documentation</h4><a class="study-link" href="https://drive.google.com/file/d/1SbmDOa_kQGCmyjptoIX-84pvjEjHxdUA/view?usp=sharing" target="_blank" rel="noopener">Read the full technical study <span class="pdf">PDF · 8 pages</span><span aria-hidden="true">↗</span><span class="sr-only"> (Google Drive, opens in a new tab)</span></a></div></div>
       </article>
       <article class="study" id="physarum" aria-labelledby="physarum-title">
-        <div class="study-heading"><h3 id="physarum-title">Physarum</h3><p>An agent-based simulation inspired by Physarum</p></div>
-        <figure><a class="render-link" href="physarum.webp" target="_blank" rel="noopener" aria-label="Open Physarum cinematic render in a new tab"><img src="physarum.webp" width="2400" height="1350" alt="A figure in a dark industrial environment faces a luminous magenta field of branching, intertwined Physarum-inspired trails." loading="lazy"></a><figcaption><span>Physarum Dystopia</span><span>Rendered in Blender</span></figcaption></figure>
-        <div class="study-details"><div class="concepts" aria-label="Technical concepts"><span>Agent-based simulation</span><span>Local sensing</span><span>Field feedback</span></div><div class="study-copy"><p>A Physarum-inspired simulation in which agents sample a shared scent field, update their headings, and leave deposits that influence later evaluations. I built a persistent feedback loop between individual agent state and environmental memory, with controls for population, sensing, movement, and field updates. The study examines the implemented rules and their observed behavior; its output is an evolving field rather than an extracted shortest path.</p><a class="study-link" href="https://drive.google.com/file/d/1o46x_PivWT-ryvyrfaKHmY65rx4UlM_o/view?usp=sharing" target="_blank" rel="noopener">Read the full technical study <span class="pdf">PDF · 8 pages</span><span aria-hidden="true">↗</span><span class="sr-only"> (Google Drive, opens in a new tab)</span></a></div></div>
+        <div class="study-heading"><p class="category">Agent-based simulation</p><h3 id="physarum-title">Physarum</h3><p>An agent-based simulation inspired by Physarum</p></div>
+        <figure><a class="render-link" href="physarum.webp" target="_blank" rel="noopener" aria-label="Open Physarum cinematic render in a new tab"><img src="physarum.webp" width="2400" height="1350" alt="A figure in a dark industrial environment faces a luminous magenta field of branching, intertwined Physarum-inspired trails." loading="lazy"></a><figcaption><span>Physarum Cinematic Render</span><span>Rendered in Blender</span></figcaption></figure>
+        <div class="study-details"><div class="study-copy"><h4>Project overview</h4><p>A Physarum-inspired simulation in which agents sample a shared scent field, update their headings, and leave deposits that influence later evaluations. I built a persistent feedback loop between individual agent state and environmental memory, with controls for population, sensing, movement, and field updates. The study examines the implemented rules and their observed behavior; its output is an evolving field rather than an extracted shortest path.</p><h4>Technical focus</h4><div class="concepts"><span>Agent-based simulation</span><span>Local sensing</span><span>Field feedback</span></div><h4>Full documentation</h4><a class="study-link" href="https://drive.google.com/file/d/1o46x_PivWT-ryvyrfaKHmY65rx4UlM_o/view?usp=sharing" target="_blank" rel="noopener">Read the full technical study <span class="pdf">PDF · 8 pages</span><span aria-hidden="true">↗</span><span class="sr-only"> (Google Drive, opens in a new tab)</span></a></div></div>
       </article>
       <article class="study" id="fractals" aria-labelledby="fractals-title">
-        <div class="study-heading"><h3 id="fractals-title">Fractals</h3><p>From recurrence to geometry</p></div>
-        <figure><a class="render-link" href="fractals.webp" target="_blank" rel="noopener" aria-label="Open Fractals cinematic render in a new tab"><img src="fractals.webp" width="2400" height="1350" alt="An illuminated recursive triangular structure suspended inside a monumental science-fiction refinery, with a silhouetted figure at its center." loading="lazy"></a><figcaption><span>Fractal Refinery (Night)</span><span>Rendered in Blender</span></figcaption></figure>
-        <div class="study-details"><div class="concepts" aria-label="Technical concepts"><span>Geometric recursion</span><span>Probabilistic affine maps</span><span>Complex iteration</span></div><div class="study-copy"><p>Ten mathematical generators brought together in one procedural system, spanning recursive geometry, probabilistic affine maps, and complex iteration. I translated established constructions—including Sierpinski forms, the Barnsley fern, and Mandelbrot and Julia sets—into inspectable node graphs. The study connects their mathematical rules to generated geometry and examines how depth, sampling resolution, and iteration count affect computational growth.</p><a class="study-link" href="https://drive.google.com/file/d/1D2FZtZ6Mopq7qLp3mYXVL6LM97TsvQwS/view?usp=sharing" target="_blank" rel="noopener">Read the full technical study <span class="pdf">PDF · 8 pages</span><span aria-hidden="true">↗</span><span class="sr-only"> (Google Drive, opens in a new tab)</span></a></div></div>
+        <div class="study-heading"><p class="category">Computational mathematics</p><h3 id="fractals-title">Fractals</h3><p>From recurrence to geometry</p></div>
+        <figure><a class="render-link" href="fractals.webp" target="_blank" rel="noopener" aria-label="Open Fractals cinematic render in a new tab"><img src="fractals.webp" width="2400" height="1350" alt="An illuminated recursive triangular structure suspended inside a monumental science-fiction refinery, with a silhouetted figure at its center." loading="lazy"></a><figcaption><span>Fractals Cinematic Render</span><span>Rendered in Blender</span></figcaption></figure>
+        <div class="study-details"><div class="study-copy"><h4>Project overview</h4><p>Ten mathematical generators brought together in one procedural system, spanning recursive geometry, probabilistic affine maps, and complex iteration. I translated established constructions, including Sierpinski forms, the Barnsley fern, and Mandelbrot and Julia sets, into inspectable node graphs. The study connects their mathematical rules to generated geometry and examines how depth, sampling resolution, and iteration count affect computational growth.</p><h4>Technical focus</h4><div class="concepts"><span>Geometric recursion</span><span>Probabilistic affine maps</span><span>Complex iteration</span></div><h4>Full documentation</h4><a class="study-link" href="https://drive.google.com/file/d/1D2FZtZ6Mopq7qLp3mYXVL6LM97TsvQwS/view?usp=sharing" target="_blank" rel="noopener">Read the full technical study <span class="pdf">PDF · 8 pages</span><span aria-hidden="true">↗</span><span class="sr-only"> (Google Drive, opens in a new tab)</span></a></div></div>
       </article>
     </section>
 
+    <section class="next-project wrap" id="next-project" aria-labelledby="next-title">
+      <h2 id="next-title">Next project</h2>
+      <div class="next-body"><p class="project-status">Planned project · Early research</p><h3>GPU-accelerated fluid solver</h3><p>My next goal is to explore building a full GPU-accelerated fluid solver using FLIP/APIC methods. I’m at the early research stage and want to understand the numerical methods and implementation requirements before defining the project in detail.</p></div>
+    </section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><a class="email" href="mailto:mazhsch102008@gmail.com">mazhsch102008@gmail.com</a></section>
   </main>
   <footer class="wrap"><span>© Mazher Ghabour</span><span>Geometry Nodes / Blender</span><a href="#top">Back to top ↑</a></footer>
 </body>
