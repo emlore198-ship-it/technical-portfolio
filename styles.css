@@ -141,3 +141,19 @@ nav a:hover, footer a:hover { color: #7c3aed; }
 
 .document-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 28px; }
 .download-link { color: #7c3aed; font-size: 15px; }
+
+/* Make the complete case studies the primary project destinations. */
+.project-title-link { text-decoration: underline; text-decoration-color: #7c3aed; text-decoration-thickness: 1px; text-underline-offset: 7px; }
+.project-title-link:hover { color: #e2e8f0; text-decoration-thickness: 2px; }
+.title-link-icon { font-family: Arial, sans-serif; font-size: .55em; color: #7c3aed; vertical-align: middle; }
+.study-quick-link { display: inline-flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; color: #7c3aed; font-size: 15px; margin-top: 8px; text-decoration: underline; }
+.study-quick-link span { color: var(--secondary); font-size: 13px; }
+.study-copy { max-width: none; }
+.study-copy > p { max-width: 850px; }
+.study-reading-reference { font-size: 15px; }
+.inline-study-link { text-decoration: underline; text-decoration-color: #7c3aed; }
+.complete-study { background: #12121a; border: 1px solid #1f1d2e; border-left: 3px solid #7c3aed; padding: 26px 28px; margin-top: 30px; }
+.complete-study > p { max-width: 850px; font-size: 16px; }
+.complete-study .study-link { padding: 10px 16px; border: 1px solid #7c3aed; text-decoration: none; }
+.complete-study .study-link:hover { background: #1f1d2e; }
+@media (max-width: 650px) { .complete-study { padding: 20px; } .complete-study .study-link { font-size: 15px; } }
